@@ -20,7 +20,7 @@ export function CatCard({ cat, isFavorite, onToggleFavorite }: CatCardProps) {
 				type="button"
 				aria-label={isFavorite ? "Убрать котика из любимых" : "Добавить котика в любимые"}
 				onClick={() => onToggleFavorite(cat)}
-				className="group/icon absolute right-2 bottom-2 h-9 w-9 cursor-pointer border-none bg-transparent p-0 opacity-0 transition-opacity group-hover:opacity-100 focus-visible:opacity-100"
+				className="group/icon absolute right-2 bottom-2 h-9 w-9 cursor-pointer border-none bg-transparent p-0 opacity-100 transition-opacity md:opacity-0 md:group-hover:opacity-100 focus-visible:opacity-100"
 			>
 				<img
 					src={`${base}heart_empty.svg`}
